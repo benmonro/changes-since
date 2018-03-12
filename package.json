@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+    "std-version": "standard-version -m \"chore(release): version %s build ${CIRCLE_BUILD_NUM} [ci skip]\""
+ 
   },
   "keywords": [],
   "author": "",
@@ -18,7 +20,8 @@
     "babel-plugin-transform-regenerator": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",
-    "jest": "^22.4.2"
+    "jest": "^22.4.2",
+    "standard-version": "^4.3.0"
   },
   "dependencies": {
     "chast": "^1.5.5",
