@@ -1,5 +1,5 @@
 [![npm][npm-img]][npm-url] [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/benmonro/changes-since)[![downloads][downloads-img]][npm-url]
-[![GitHub issues](https://img.shields.io/github/issues-raw/badges/shields.svg)](https://github.com/benmonro/changes-since/issues)
+[![GitHub issues](https://img.shields.io/github/issues-raw/badges/shields.svg)](https://github.com/benmonro/changes-since/issues)[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 Filter your CHANGELOG to view/format changes since a specific version.  Uses [chast](https://github.com/benmonro/chast) to parse the changelog.
 
