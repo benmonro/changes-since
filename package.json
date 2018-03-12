@@ -1,6 +1,6 @@
 {
   "name": "changes-since",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "/lib/index.js",
   "bin": {
@@ -10,7 +10,6 @@
     "test": "jest",
     "build": "babel src -d lib",
     "std-version": "standard-version -m \"chore(release): version %s build ${CIRCLE_BUILD_NUM} [ci skip]\""
- 
   },
   "keywords": [],
   "author": "",
