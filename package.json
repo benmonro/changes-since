@@ -1,0 +1,28 @@
+{
+  "name": "changes-since",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "changes-since": "./lib/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "dependencies": {
+    "changelog-parser": "file:../changelog-parser",
+    "lodash": "^4.17.5",
+    "semver": "^5.5.0",
+    "yargs": "^11.0.0"
+  }
+}
