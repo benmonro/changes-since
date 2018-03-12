@@ -3,6 +3,9 @@
 
 Filter your CHANGELOG to view/format changes since a specific version.
 
+[npm-img]: https://img.shields.io/npm/v/changes-since.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/changes-since
+[downloads-img]: https://img.shields.io/npm/dm/changes-since.svg?style=flat-square
 
 # CLI
 
