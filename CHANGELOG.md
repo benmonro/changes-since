@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.8"></a>
+## [1.1.8](https://github.com/benmonro/changes-since/compare/v1.1.7...v1.1.8) (2018-03-13)
+
+
+### Bug Fixes
+
+* removed console.log ([faa637e](https://github.com/benmonro/changes-since/commit/faa637e))
+
+
+
 <a name="1.1.7"></a>
 ## [1.1.7](https://github.com/benmonro/changes-since/compare/v1.1.6...v1.1.7) (2018-03-13)
 
