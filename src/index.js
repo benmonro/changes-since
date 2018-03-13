@@ -1,7 +1,7 @@
 import { gt, gte, coerce } from "semver";
-import filter from "unist-util-filter";
 import { parse } from "chast";
 import visitChildren from "unist-util-visit-children";
+import inspect from 'unist-util-inspect';
 
 
 export const format = ast => {
@@ -17,7 +17,7 @@ export const format = ast => {
   });
 
   const visitVersions = visitChildren(visitCategories);
-
+console.log(inspect(ast));
   visitVersions(ast);
 
   return Object.keys(categories)
@@ -33,13 +33,18 @@ export const format = ast => {
 };
 export default (changeLog, { since = "0.0.0", inclusive = false } = {}) => {
   const ast = parse(changeLog);
+  const comparison = inclusive ? gte : gt;
 
-  return filter(ast, node => {
-      const comparison = inclusive ? gte : gt;
-      let coerced = coerce(node.semver);
-      if(coerced == null) {
-        node.semver = "0.0.0";
+  ast.children = ast.children.filter(node => {
+
+      let nodeSemver = coerce(node.semver);
+      if(nodeSemver == null) {
+        nodeSemver = "0.0.0";
       }
-    return node.type != "versionEntry" || comparison(coerce(node.semver), since);
+
+
+    return comparison(nodeSemver, since);
+  
   });
+  return ast;
 };
