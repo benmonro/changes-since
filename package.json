@@ -23,7 +23,7 @@
     "standard-version": "^4.3.0"
   },
   "dependencies": {
-    "chast": "^1.5.5",
+    "chast": "1.5.7",
     "lodash": "^4.17.5",
     "semver": "^5.5.0",
     "unist-util-filter": "^0.2.1",
