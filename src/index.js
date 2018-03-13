@@ -17,7 +17,7 @@ export const format = ast => {
   });
 
   const visitVersions = visitChildren(visitCategories);
-console.log(inspect(ast));
+
   visitVersions(ast);
 
   return Object.keys(categories)
